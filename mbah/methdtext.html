@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metode Text</title>
+  </head>
+  <body>
+
+    <p id="paragraf">
+        Sedang Belajar <b>Jquery</b>
+    </p>
+
+    <button id="tombol">Lihat</button>
+
+
+
+
+
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#tombol").click(function () {
+          var nilai = $("#paragraf").text();
+          alert(nilai);
+        });
+      });
+    </script>
+  </body>
+</html>
